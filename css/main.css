@@ -1,0 +1,104 @@
+/* Importando fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans:wght@300&display=swap');
+
+/* Definir as variáveis de ambiente do CSS */
+:root {
+  --bg-cor-fundo: rgb(13, 59, 129);
+  --br-cor-main: rgb(54, 236, 206);
+  --bg-cor-main-darck: rgb(3, 16, 6);
+  --cor-texto: rgb(255, 255, 255);
+}
+
+/* Resetar as definições dos navegadores */
+* {
+  outline: 0;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-cor-fundo);
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.2em;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--br-cor-main);
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 50px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--br-cor-main);
+  color: var(--cor-texto);
+  height: 70px;
+}
+
+header h1 {
+  width: 90%;
+  text-align: center;
+}
+
+header img {
+  height: 70px;
+}
+
+footer {
+  background-color: var(--br-cor-main);
+  height: 60px;
+  color: var(--cor-texto);
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+aside {
+  width: 50%;
+  margin: 0 auto;
+}
+
+aside img {
+  width: 100%;
+}
+
+.contato {
+  width: 50%;
+}
+
+form label,
+form input {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  width: 50%;
+}
+
+form button {
+  margin-left: 50px;
+  padding: 0.25em 1em;
+  font-size: 1em;
+  background-color: var(--bg-cor-main-darck);
+  color: var(--cor-texto);
+  border: none;
+  border-radius: 5px;
+}
+
+form input {
+  height: 40px;
+  padding: 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(var(--bg-cor-main-darck));
+}
